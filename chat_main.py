@@ -29,11 +29,9 @@ class HistoricoMensagem(BaseModel):
 def responde_IA(mensagem: HistoricoMensagem):
 
     try:
-        # pergunta = str(input("Faça sua pergunta: "))
 
         
         personagem = mensagem.personagem.lower()
-        print('Personagem: ', personagem)
 
         match personagem:
             case 'yoda':
@@ -80,9 +78,7 @@ def responde_IA(mensagem: HistoricoMensagem):
                 )
 
         mensagens = mensagem.mensagens
-        print('mensagens: ', mensagens)
         pergunta = mensagem.pergunta
-        print('pergunta: ', pergunta)
 
         response = client.models.generate_content(
             model = "gemini-2.0-flash",

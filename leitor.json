@@ -1,0 +1,3 @@
+{
+  "Response": "```json\n{\n        \"pergunta\": \"Qual destes é um tipo popular de cachorro?\",\n        \"alternativas\": [\"Gato\", \"Pássaro\", \"Golden Retriever\", \"Hamster\"],\n        \"correta\": \"Golden Retriever\"\n        }\n```"
+}
