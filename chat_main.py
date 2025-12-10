@@ -12,7 +12,7 @@ load_dotenv()
 
 API_KEY = os.getenv('GEMINI_API_KEY')
 
-client = genai.Client(api_key="AIzaSyDuY8AW4EojQUtmCoaGB2PPJhIpvAG65T4")
+client = genai.Client(api_key="")
 
 # Modelos das entradas
 class ParteMensagem(BaseModel):
